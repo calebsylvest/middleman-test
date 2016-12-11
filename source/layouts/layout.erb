@@ -14,7 +14,9 @@
     <%= javascript_include_tag :all %>
   </head>
 
-  <body class="<%= page_classes %>" style="background-color:aqua;">
+  <body class="<%= page_classes %>">
+    <%= partial "partials/nav" %>
     <%= yield %>
+    <%= partial "partials/footer" %>
   </body>
 </html>
