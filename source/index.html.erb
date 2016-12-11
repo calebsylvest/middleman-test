@@ -1,5 +1,10 @@
 ---
-title: Welcome to Middleman
+title: Idea Gen
+layout: awesome
+my_list:
+  - one stupid cool cat
+  - two birds a singing
+  - three geese a laying
 ---
 
 <div class="welcome">
@@ -11,3 +16,10 @@ title: Welcome to Middleman
     <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
   </p><!-- .doc -->
 </div><!-- .welcome -->
+
+<h1>List</h1>
+<ol>
+  <% current_page.data.my_list.each do |f| %>
+  <li><%= f %></li>
+  <% end %>
+</ol>
