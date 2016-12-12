@@ -36,10 +36,9 @@ end
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
+  # Minify assets
+  activate :minify_html
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
 
   # Append a hash to asset urls (make sure to use the url helpers)
